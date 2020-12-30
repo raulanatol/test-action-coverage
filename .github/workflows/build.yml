@@ -23,5 +23,5 @@ jobs:
         run: yarn test --coverage
       - uses: raulanatol/jest-coverage-comment-action@logs
         with:
-          jest-command: yarn test
+          jest-command: yarn test-ci
           github-token: ${{ secrets.GITHUB_TOKEN }}
