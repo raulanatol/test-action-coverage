@@ -1,5 +1,5 @@
-import express from "express";
-import { getHelloMessage } from "./utils";
+import express from 'express';
+import { getHelloMessage } from './utils';
 
 const app = express();
 
@@ -10,9 +10,9 @@ export const sayHello = (req, res) => {
   });
 };
 
-app.use("/", sayHello);
+app.use('/', sayHello);
 
 const port = 3001;
 app.listen(port, () => {
-  console.log("🚀 Running at localhost:3001");
+  console.log('🚀 Running at localhost:3001');
 });
