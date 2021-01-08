@@ -1,5 +1,5 @@
-import { getHelloMessage } from "./utils";
+import { getHelloMessage } from './utils';
 
-test("should return the hello response", () => {
-  expect(getHelloMessage()).toBe("Hello");
+test('should return the hello response', () => {
+  expect(getHelloMessage()).toBe('Hello');
 });
