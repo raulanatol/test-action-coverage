@@ -21,7 +21,7 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Check
         run: yarn test --coverage
-      - uses: raulanatol/jest-coverage-comment-action@issue_14
+      - uses: raulanatol/jest-coverage-comment-action
         with:
           jest-command: yarn test-ci
           use-existing-reports: true
