@@ -23,7 +23,7 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Check
         run: yarn test --coverage
-      - uses: raulanatol/jest-coverage-comment-action@1.1.3-alpha
+      - uses: raulanatol/jest-coverage-comment-action@feature/compare-converage-cache
         with:
           jest-command: yarn test-ci
           use-existing-reports: true
