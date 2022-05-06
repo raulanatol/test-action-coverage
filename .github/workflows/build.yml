@@ -26,3 +26,4 @@ jobs:
           jest-command: yarn test-ci
           use-existing-reports: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          auth-token: 'tokenDePrueba'
