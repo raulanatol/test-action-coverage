@@ -26,5 +26,7 @@ jobs:
           jest-command: yarn test-ci
           use-existing-reports: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: 'web'
           auth-token: 'tokenDePrueba'
           auth-header-parameter: 'bearer'
+          host-measures: 'https://8c5b-81-61-118-50.eu.ngrok.io/v1/testing/report/measures'
