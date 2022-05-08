@@ -27,3 +27,4 @@ jobs:
           use-existing-reports: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auth-token: 'tokenDePrueba'
+          auth-header-parameter: 'bearer'
