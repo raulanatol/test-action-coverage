@@ -1,5 +1,5 @@
 name: Build
-on: pull_request
+on: [pull_request, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,8 +21,12 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Check
         run: yarn test --coverage
-      - uses: raulanatol/jest-coverage-comment-action@issue_14
+      - uses: inavazu/jest-coverage-comment-action@feature/compare-converage-cache
         with:
           jest-command: yarn test-ci
           use-existing-reports: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: 'web'
+          auth-token: 'tokenDePrueba'
+          auth-header-parameter: 'bearer'
+          host-measures: 'https://8c5b-81-61-118-50.eu.ngrok.io/v1/testing/report/measures'
