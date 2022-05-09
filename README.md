@@ -20,7 +20,7 @@
 ## Installation
 
 ```shell script
-make init
+make init 
 ```
 
 
