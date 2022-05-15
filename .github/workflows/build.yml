@@ -2,7 +2,7 @@ name: Build
 on: [pull_request, workflow_dispatch]
 
 env:
-  NODE_DEBUG=http
+  NODE_DEBUG: 'http'
 
 jobs:
   build:
