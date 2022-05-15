@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      export NODE_DEBUG=http
+      NODE_DEBUG=http
     steps:
       - uses: actions/checkout@v2
         with:
