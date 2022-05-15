@@ -29,4 +29,4 @@ jobs:
           repository: 'web'
           auth-token: 'tokenDePrueba'
           auth-header-parameter: 'bearer'
-          host-measures: 'https://8c5b-81-61-118-50.eu.ngrok.io/v1/testing/report/measures'
+          host-measures: 'https://b1f2-81-61-118-50.eu.ngrok.io/v1/testing/report/measures'
