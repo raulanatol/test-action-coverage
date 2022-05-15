@@ -1,10 +1,12 @@
 name: Build
 on: [pull_request, workflow_dispatch]
+
+env:
+  NODE_DEBUG=http
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      NODE_DEBUG=http
     steps:
       - uses: actions/checkout@v2
         with:
