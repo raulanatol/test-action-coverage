@@ -30,7 +30,6 @@ jobs:
           jest-command: yarn test-ci
           use-existing-reports: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          measures-server-host: ' https://49f0-81-61-118-50.eu.ngrok.io/v1/testing/report/measures'
           measures-server-auth-header-parameter: 'bearer'
           measures-server-auth-token: 'tokenDePrueba'
           measures-server-cors-origin: 'http://localhost:3000'
